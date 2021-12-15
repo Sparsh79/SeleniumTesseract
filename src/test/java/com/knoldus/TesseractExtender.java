@@ -41,7 +41,7 @@ public class TesseractExtender {
         BufferedImage dest = img.getSubimage(p.getX(), p.getY(), rect.width,
                 rect.height);
 
-        // write back the image data for element in File object
+        // write back the image data for element in new File
         ImageIO.write(dest, "png", new File("src/test/resources/testImage.png"));
     }
 }
