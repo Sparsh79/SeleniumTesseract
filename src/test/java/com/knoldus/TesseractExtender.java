@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class TesseractExtender {
 
-    public static File capturePicture(WebElement element) throws IOException {
+    public static void capturePicture(WebElement element) throws IOException {
 
         //cast element to wrapsDriver
         WrapsDriver wrapsDriver = (WrapsDriver) element;
@@ -43,6 +43,5 @@ public class TesseractExtender {
 
         // write back the image data for element in File object
         ImageIO.write(dest, "png", new File("src/test/resources/testImage.png"));
-        return screen;
     }
 }
